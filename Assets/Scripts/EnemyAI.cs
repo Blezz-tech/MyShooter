@@ -6,8 +6,10 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     public List<Transform> patrolPoints;
+    public PlayerController player;
 
     private NavMeshAgent _navMeshAgent;
+    private bool _isPlayerNoticed;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,25 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var direction = player.transform.position - transform.position;
+
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + Vector3.up, direction, out hit))
+        {
+            if(hit.collider.gameObject == player.gameObject)
+            {
+                _isPlayerNoticed = true;
+            }
+            else
+            {
+                _isPlayerNoticed = false;
+            }
+        }
+        else
+        {
+            _isPlayerNoticed = false;
+        }
+
         PatrolUpdate();
     }
 
