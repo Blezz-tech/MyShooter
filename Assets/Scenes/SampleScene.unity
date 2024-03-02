@@ -1195,6 +1195,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2009341207}
   - component: {fileID: 2009341208}
+  - component: {fileID: 2009341209}
+  - component: {fileID: 2009341210}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1234,6 +1236,39 @@ MonoBehaviour:
   minAngle: -30
   maxAngle: 15
   RotationSpeed: 500
+--- !u!114 &2009341209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009341206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3dd998a3cb84744be666e3f1e709ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: 9.8
+  jumpForce: 10
+  speed: 5
+--- !u!143 &2009341210
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009341206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.8
+  m_Radius: 0.3
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &2114421959
 GameObject:
   m_ObjectHideFlags: 0
