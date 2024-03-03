@@ -530,6 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
+  valueRectTransform: {fileID: 8273404128074454675}
 --- !u!1 &5869605703255942727
 GameObject:
   m_ObjectHideFlags: 0
