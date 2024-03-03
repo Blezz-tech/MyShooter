@@ -521,6 +521,7 @@ MonoBehaviour:
   - {fileID: 1870095554}
   - {fileID: 1374360141}
   player: {fileID: 110605645}
+  viewAngle: 90
 --- !u!1 &727821209
 GameObject:
   m_ObjectHideFlags: 0
