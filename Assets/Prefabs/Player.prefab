@@ -830,6 +830,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adde594d428d53a48991103413a2d5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levels:
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
+  - fireballDamage: 0
+    grenadeDamage: 0
+    experienceForTheNextLevel: 0
   experienceValueRectTransform: {fileID: 8281978912409074018}
   levelValueTMP: {fileID: 4192980732939730193}
 --- !u!1 &4078712224298930294
