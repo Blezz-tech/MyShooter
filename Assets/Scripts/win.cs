@@ -10,6 +10,5 @@ public class win : MonoBehaviour
     {
         Debug.Log("meow");
         player.PlayerIsDead("WIN !!!");
-
     }
 }

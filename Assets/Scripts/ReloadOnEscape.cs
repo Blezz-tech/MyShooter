@@ -5,11 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ReloadOnEscape : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
