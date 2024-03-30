@@ -12,7 +12,6 @@ public class Portal : MonoBehaviour
     public float rotationSpeed = 10f;
 
 
-
     private void Start()
     {
         transform.Rotate(0, 0, 0);

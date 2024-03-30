@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject gameplayUI;
     public GameObject gameOverScreen;
+
+    public TextMeshProUGUI textEnd;
 
     private float _maxValue;
 
@@ -23,14 +26,15 @@ public class PlayerHealth : MonoBehaviour
         value -= damage;
         if (value <= 0)
         {
-            PlayerIsDead();
+            PlayerIsDead("Game Over");
         }
 
         DrawHealthBar();
     }
 
-    private void PlayerIsDead()
+    public void PlayerIsDead(string text)
     {
+        textEnd.text = text;
         gameplayUI.SetActive(false);
         gameOverScreen.SetActive(true);
         GetComponent<PlayerController>().enabled = false;
