@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    public float speed;
-    public float lifetime;
-    public float damage = 10;
+    [SerializedField] private float speed;
+    [SerializedField] private float lifetime;
+    [SerializedField] private float damage = 10;
 
     private void Start()
     {
